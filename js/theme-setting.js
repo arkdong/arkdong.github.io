@@ -4,15 +4,18 @@
 function isNightFun() {
     var isNightTemp = localStorage.getExpire('night');
 
-    // 第一次进来判断是白天还是晚上
-    if (isNightTemp == null || isNightTemp == undefined) {
-        if (isNightRange("19:00", "23:59") || isNightRange("00:00", "07:00")) {
-            isNightTemp = 'true';
-        } else {
-            isNightTemp = 'false';
-        }
-        localStorage.setExpire("night", isNightTemp, expireTime1H);
-    }
+    // // 第一次进来判断是白天还是晚上
+    // if (isNightTemp == null || isNightTemp == undefined) {
+    //     if (isNightRange("19:00", "23:59") || isNightRange("00:00", "07:00")) {
+    //         isNightTemp = 'true';
+    //     } else {
+    //         isNightTemp = 'false';
+    //     }
+    //     localStorage.setExpire("night", isNightTemp, expireTime1H);
+    // }
+
+    isNightTemp = 'false';
+    localStorage.setExpire("night", isNightTemp, expireTime1H);
     return isNightTemp;
 }
 
@@ -57,7 +60,7 @@ function switchNight() {
     } else {
         isNight = 'false';
     }
-    
+
     applyNight(isNight);
     localStorage.setExpire('night', isNight, expireTime1H);
     if(typeof loadUtterances == 'function'){

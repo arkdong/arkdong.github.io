@@ -10967,6 +10967,7 @@ a.article-nav-next span {
   align-items: center;
   padding: 0 0.5rem;
   margin: 1.25rem 0.25rem;
+  font-size: 1.2rem;
 }
 .navbar-main .navbar-item.is-active {
   background-color: transparent;
@@ -10984,7 +10985,7 @@ a.article-nav-next span {
   }
 }
 .navbar-logo img {
-  max-height: 1.75rem;
+  max-height: 3rem;
 }
 @media screen and (min-width: 1088px) {
   .navbar > .container .navbar-menu,
@@ -11008,7 +11009,7 @@ footer.footer .level-end .field {
   }
 }
 .footer-logo img {
-  max-height: 1.75rem;
+  max-height: 3rem;
 }
 .pagination {
   margin-top: 1.5rem;

@@ -10821,15 +10821,27 @@ article.article .content h1 {
 }
 article.article .content h2 {
   font-size: 1.5em;
+  color: #2e80f2;
 }
 article.article .content h3 {
   font-size: 1.25em;
+  color: #2e80f2;
 }
 article.article .content h4 {
   font-size: 1.125em;
+  color: #e5b567;
 }
 article.article .content h5 {
   font-size: 1em;
+  color: #e83e3e;
+}
+article.article .content strong,
+article.article .content b {
+  color: #ff82b2;
+}
+article.article .content em,
+article.article .content i {
+  color: #90b2fa;
 }
 article.article .content pre {
   font-size: 0.85em;
